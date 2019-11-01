@@ -25,16 +25,70 @@
 <%= f.text_field :city %>
 </div>
 <div class="main-app-element">
-<%= f.label :state, "State:" %>(dropdown)
-<%= f.text_field :state %>
+<%= f.label :state, "State:" %>
+<%= select_tag "State", options_for_select([["AK"], 
+                ["AL"], 
+                ["AR"], 
+                ["AZ"], 
+                ["CA"], 
+                ["CO"], 
+                ["CT"], 
+                ["DC"], 
+                ["DE"], 
+                ["FL"], 
+                ["GA"], 
+                ["HI"], 
+                ["IA"], 
+                ["ID"], 
+                ["IL"], 
+                ["IN"], 
+                ["KS"], 
+                ["KY"], 
+                ["LA"], 
+                ["MA"], 
+                ["MD"], 
+                ["ME"], 
+                ["MI"], 
+                ["MN"], 
+                ["MO"], 
+                ["MS"], 
+                ["MT"], 
+                ["NC"], 
+                ["ND"], 
+                ["NE"], 
+                ["NH"], 
+                ["NJ"], 
+                ["NM"], 
+                ["NV"], 
+                ["NY"], 
+                ["OH"], 
+                ["OK"], 
+                ["OR"], 
+                ["PA"], 
+                ["RI"], 
+                ["SC"], 
+                ["SD"], 
+                ["TN"], 
+                ["TX"], 
+                ["UT"], 
+                ["VA"], 
+                ["VT"], 
+                ["WA"], 
+                ["WI"], 
+                ["WV"], 
+                ["WY"]
+
+
+]) %>
 </div>
 <div class="main-app-element">
 <%= f.label :zip, "Zip:" %>
 <%= f.text_field :zip %>
 </div>
 <div class="main-app-element">
-<%= f.label :residence_type, "Residence Type:" %>(dropdown)
-<%= f.text_field :residence_type %>
+<%= f.label :residence_type, "Residence Type:" %>
+<%= select_tag "Residence Type", options_for_select([['Lives w/ Relatives'], ['Own Home Outright'], ['Rent'], ['Mortgage']]) %>
+
 </div>
 <div class="main-app-element">
 <%= f.label :monthly_housing_cost, "Monthly Housing Cost:" %>
@@ -54,19 +108,19 @@
 </div>
 <div class="main-app-element">
 <%= f.label :dob, "Date of Birth:" %>
-<%= f.text_field :dob %>
+<%= f.text_field :dob, placeholder: "mmddyear" %>
 </div>
 <div class="main-app-element">
 <%= f.label :ssn, "Social Security Number:" %>
-<%= f.text_field :ssn %>
+<%= f.text_field :ssn, placeholder: "xxx-xx-xxxx" %>
 </div>
 <div class="main-app-element">
 <%= f.label :bankruptcy, "Have you declared Bankruptcy within the last 5 years?:" %>
 <%= f.check_box :bankruptcy %> (check box if yes)
 </div>
 <div class="main-app-element">
-<%= f.label :employment_type, "Employment Type:" %>(dropdown)
-<%= f.text_field :employment_type %>
+<%= f.label :employment_type, "Employment Type:" %>
+<%= select_tag "Employment Type", options_for_select([['Employed Full-Time'], ['Employed Part-Time'], ['Social Security'], ['Fixed-Income'], ['Unemployed'], ['Student']]) %>
 </div>
 <div class="main-app-element">
 <%= f.label :employer_name, "Employer Name:" %>
