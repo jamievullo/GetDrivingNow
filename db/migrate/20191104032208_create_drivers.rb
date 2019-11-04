@@ -1,6 +1,7 @@
-class CreateUsers < ActiveRecord::Migration[6.0]
+class CreateDrivers < ActiveRecord::Migration[6.0]
   def change
-    create_table :users do |t|
+    create_table :drivers do |t|
+
       t.string :first_name
       t.string :last_name
       t.string :address
@@ -22,6 +23,7 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string :job_title
       t.integer :job_duration
       t.integer :monthly_income
+
       t.timestamps
     end
   end
