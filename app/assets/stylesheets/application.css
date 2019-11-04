@@ -13,13 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
- .main-app-element{
-     color: green;
-     font-size: 25px;
- }
-
- input {
-     color:#15129c;
-     background-color: #eae9e9;
- }

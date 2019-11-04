@@ -3,144 +3,98 @@
 <h1>Applicant Registration Form</h1>
 
 <%= form_for(@driver) do |f| %>
-
-<div class="main-app-element">
+<div class="field-style field-split align-left">
 <%= f.label :first_name, "First Name:" %>
 <%= f.text_field :first_name, placeholder: "First Name" %>
 </div>
-<div class="main-app-element">
+
+<div class="form-label-group">
 <%= f.label :last_name, "Last Name:" %>
 <%= f.text_field :last_name %>
 </div>
-<div class="main-app-element">
+<div class="form-label-group">
 <%= f.label :address, "Address:"%>
 <%= f.text_field :address %>
 </div>
-<div class="main-app-element">
+<div class="form-label-group">
 <%= f.label :apt, "Apt #:" %>
 <%= f.text_field :apt %>
 </div>
-<div class="main-app-element">
+<div class="form-label-group">
 <%= f.label :city, "City:" %>
 <%= f.text_field :city %>
 </div>
-<div class="main-app-element">
+<div class="form-label-group">
 <%= f.label :state, "State:" %>
-<%= select_tag "State", options_for_select([["AK"], 
-                ["AL"], 
-                ["AR"], 
-                ["AZ"], 
-                ["CA"], 
-                ["CO"], 
-                ["CT"], 
-                ["DC"], 
-                ["DE"], 
-                ["FL"], 
-                ["GA"], 
-                ["HI"], 
-                ["IA"], 
-                ["ID"], 
-                ["IL"], 
-                ["IN"], 
-                ["KS"], 
-                ["KY"], 
-                ["LA"], 
-                ["MA"], 
-                ["MD"], 
-                ["ME"], 
-                ["MI"], 
-                ["MN"], 
-                ["MO"], 
-                ["MS"], 
-                ["MT"], 
-                ["NC"], 
-                ["ND"], 
-                ["NE"], 
-                ["NH"], 
-                ["NJ"], 
-                ["NM"], 
-                ["NV"], 
-                ["NY"], 
-                ["OH"], 
-                ["OK"], 
-                ["OR"], 
-                ["PA"], 
-                ["RI"], 
-                ["SC"], 
-                ["SD"], 
-                ["TN"], 
-                ["TX"], 
-                ["UT"], 
-                ["VA"], 
-                ["VT"], 
-                ["WA"], 
-                ["WI"], 
-                ["WV"], 
-                ["WY"]
-]) %>
+<%= select_tag "State", options_for_select([["AK"], ["AL"], ["AR"], ["AZ"], ["CA"], ["CO"], 
+               ["CT"], ["DC"], ["DE"], ["FL"], ["GA"], ["HI"], ["IA"], ["ID"], ["IL"], 
+               ["IN"], ["KS"], ["KY"], ["LA"], ["MA"], ["MD"], ["ME"], ["MI"], ["MN"], 
+               ["MO"], ["MS"], ["MT"], ["NC"], ["ND"], ["NE"], ["NH"], ["NJ"], ["NM"], 
+               ["NV"], ["NY"], ["OH"], ["OK"], ["OR"], ["PA"], ["RI"], ["SC"], ["SD"], 
+               ["TN"], ["TX"], ["UT"], ["VA"], ["VT"], ["WA"], ["WI"], ["WV"], ["WY"]]) %>
 </div>
-<div class="main-app-element">
+<div class="form-label-group">
 <%= f.label :zip, "Zip:" %>
 <%= f.text_field :zip %>
 </div>
-<div class="main-app-element">
+<div class="form-label-group">
 <%= f.label :residence_type, "Residence Type:" %>
 <%= select_tag "Residence Type", options_for_select([['Lives w/ Relatives'], ['Own Home Outright'], ['Rent'], ['Mortgage']]) %>
 
 </div>
-<div class="main-app-element">
+<div class="form-label-group">
 <%= f.label :monthly_housing_cost, "Monthly Housing Cost:" %>
 <%= f.text_field :monthly_housing_cost %>
 </div>
-<div class="main-app-element">
+<div class="form-label-group">
 <%= f.label :address_duration, "How long at current address?:" %>
 <%= f.text_field :address_duration %>
 </div>
-<div class="main-app-element">
+<div class="form-label-group">
 <%= f.label :phone, "Phone Number:" %>
 <%= f.text_field :phone %>
 </div>
-<div class="main-app-element">
+<div class="form-label-group">
 <%= f.label :email, "Email Address:" %>
 <%= f.email_field :email %>
 </div>
-<div class="main-app-element">
+<div class="form-label-group">
 <%= f.label :dob, "Date of Birth:" %>
 <%= f.text_field :dob, placeholder: "mmddyear" %>
 </div>
-<div class="main-app-element">
+<div class="form-label-group">
 <%= f.label :ssn, "Social Security Number:" %>
 <%= f.text_field :ssn, placeholder: "xxx-xx-xxxx" %>
 </div>
-<div class="main-app-element">
-<%= f.label :bankruptcy, "Have you declared Bankruptcy within the last 5 years?:" %>
+<div class="form-label-group">
+<%= f.label :bankruptcy, "Bankruptcy within the last 5 years?:" %>
 <%= f.check_box :bankruptcy %> (check box if yes)
 </div>
-<div class="main-app-element">
+<div class="form-label-group">
 <%= f.label :employment_type, "Employment Type:" %>
 <%= select_tag "Employment Type", options_for_select([['Employed Full-Time'], ['Employed Part-Time'], ['Social Security'], ['Fixed-Income'], ['Unemployed'], ['Student']]) %>
 </div>
-<div class="main-app-element">
+<div class="form-label-group">
 <%= f.label :employer_name, "Employer Name:" %>
 <%= f.text_field :employer_name %>
 </div>
-<div class="main-app-element">
+<div class="form-label-group">
 <%= f.label :job_title, "Job Title:" %>
 <%= f.text_field :job_title %>
 </div>
-<div class="main-app-element">
+<div class="form-label-group">
 <%= f.label :employer_phone_number, "Job Number:" %>
 <%= f.text_field :employer_phone_number %>
 </div>
-<div class="main-app-element">
+<div class="form-label-group">
 <%= f.label :job_duration, "Time at Job:" %>
 <%= f.text_field :job_duration %>
 </div>
-<div class="main-app-element">
+<div class="form-label-group">
 <%= f.label :monthly_income, "Gross Monthly Income:" %>
 <%= f.text_field :monthly_income %>
 </div>
-<div class="main-app-element">
+<div class="form-label-group">
 <%= f.submit "Submit Your Application" %>
 </div>
 <% end %>
