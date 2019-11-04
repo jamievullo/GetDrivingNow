@@ -26,12 +26,12 @@
 </div>
 <div class="form-label-group">
 <%= f.label :state, "State:" %>
-<%= select_tag "State", options_for_select([["AK"], ["AL"], ["AR"], ["AZ"], ["CA"], ["CO"], 
+<%= f.select :state, [["AK"], ["AL"], ["AR"], ["AZ"], ["CA"], ["CO"], 
                ["CT"], ["DC"], ["DE"], ["FL"], ["GA"], ["HI"], ["IA"], ["ID"], ["IL"], 
                ["IN"], ["KS"], ["KY"], ["LA"], ["MA"], ["MD"], ["ME"], ["MI"], ["MN"], 
                ["MO"], ["MS"], ["MT"], ["NC"], ["ND"], ["NE"], ["NH"], ["NJ"], ["NM"], 
                ["NV"], ["NY"], ["OH"], ["OK"], ["OR"], ["PA"], ["RI"], ["SC"], ["SD"], 
-               ["TN"], ["TX"], ["UT"], ["VA"], ["VT"], ["WA"], ["WI"], ["WV"], ["WY"]]) %>
+               ["TN"], ["TX"], ["UT"], ["VA"], ["VT"], ["WA"], ["WI"], ["WV"], ["WY"]] %>
 </div>
 <div class="form-label-group">
 <%= f.label :zip, "Zip:" %>
@@ -39,7 +39,7 @@
 </div>
 <div class="form-label-group">
 <%= f.label :residence_type, "Residence Type:" %>
-<%= select_tag "Residence Type", options_for_select([['Lives w/ Relatives'], ['Own Home Outright'], ['Rent'], ['Mortgage']]) %>
+<%= f.select :residence_type, [['Lives w/ Relatives'], ['Own Home Outright'], ['Rent'], ['Mortgage']] %>
 
 </div>
 <div class="form-label-group">
@@ -72,7 +72,7 @@
 </div>
 <div class="form-label-group">
 <%= f.label :employment_type, "Employment Type:" %>
-<%= select_tag "Employment Type", options_for_select([['Employed Full-Time'], ['Employed Part-Time'], ['Social Security'], ['Fixed-Income'], ['Unemployed'], ['Student']]) %>
+<%= f.select :employment_type, [['Employed Full-Time'], ['Employed Part-Time'], ['Social Security'], ['Fixed-Income'], ['Unemployed'], ['Student']] %>
 </div>
 <div class="form-label-group">
 <%= f.label :employer_name, "Employer Name:" %>
