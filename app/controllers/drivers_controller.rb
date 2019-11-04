@@ -29,7 +29,7 @@ class DriversController < ApplicationController
     private 
 
     def driver_params 
-        params.require(:drivers).permit(:first_name, :last_name, :address, :apt, :city, :state, :zip, :residence_type, :monthly_housing_cost, :address_duration, :phone, :email, :dob, :ssn, :bankruptcy, :employment_type, :employer_name, :employer_phone_number, :job_title, :job_duration, :monthly_income)
+        params.require(:driver).permit(:first_name, :last_name, :address, :apt, :city, :state, :zip, :residence_type, :monthly_housing_cost, :address_duration, :phone, :email, :dob, :ssn, :bankruptcy, :employment_type, :employer_name, :employer_phone_number, :job_title, :job_duration, :monthly_income)
     end
 
 end
