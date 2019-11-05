@@ -9,6 +9,7 @@ class DriversController < ApplicationController
     end
 
     def create
+        #raise params.inspect
         @driver = Driver.new(driver_params)
         if @driver.save!
             flash[:notice] = "Congrats #{@driver.first_name}, you will be contacted within the next 24 hours!"
@@ -29,7 +30,7 @@ class DriversController < ApplicationController
     private 
 
     def driver_params 
-        params.require(:driver).permit(:first_name, :last_name, :address, :apt, :city, :state, :zip, :residence_type, :monthly_housing_cost, :address_duration, :phone, :email, :dob, :ssn, :bankruptcy, :employment_type, :employer_name, :employer_phone_number, :job_title, :job_duration, :monthly_income)
+        params.require(:driver).permit(:first_name, :last_name, :address, :apt, :city, :state, :zip, :residence_type, :monthly_housing_cost, :address_duration_years, :address_duration_months, :phone, :email, :dob, :ssn, :bankruptcy, :employment_type, :employer_name, :employer_phone_number, :job_title, :job_duration_years, :job_duration_months, :monthly_income)
     end
 
 end

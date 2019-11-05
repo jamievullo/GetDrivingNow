@@ -21,8 +21,9 @@ ActiveRecord::Schema.define(version: 2019_11_04_032522) do
     t.string "state"
     t.integer "zip"
     t.string "residence_type"
-    t.integer "monthly_housing_cost"
-    t.integer "address_duration"
+    t.string "monthly_housing_cost"
+    t.string "address_duration_years"
+    t.string "address_duration_months"
     t.integer "phone"
     t.string "email"
     t.integer "dob"
@@ -32,8 +33,9 @@ ActiveRecord::Schema.define(version: 2019_11_04_032522) do
     t.string "employer_name"
     t.integer "employer_phone_number"
     t.string "job_title"
-    t.integer "job_duration"
-    t.integer "monthly_income"
+    t.string "job_duration_years"
+    t.string "job_duration_months"
+    t.string "monthly_income"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
