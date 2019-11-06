@@ -15,42 +15,45 @@
  */
 
  body {
-    background-color: rgb(147, 126, 151);
+
+    background: url('CAR-DRIVING.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    /*background: linear-gradient(to left,#32dfa8,hsl(236, 67%, 56%));*/
   }
 
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+.container {
+    display: grid;
+    grid-template-rows: [row1-start] 1fr 1fr [row1-end row2-start] 1fr 1fr [row2-end row3-start] 1fr 1fr 1fr [row3-end row4-start] 1fr 1fr 1fr [row4-end row5-start] 1fr 1fr [row5-end row6-start] 1fr 1fr [row6-end row7-start] 1fr 1fr [row7-end row8-start] 1fr 1fr 1fr [row8-end row9-start] 1fr 1fr [row9-end row10-start] 1fr [row10-end]; 
+        
+
+}
+
+
+
+.words {
+  margin-left: 5px;
+  padding:10px;
+  color: rgb(51, 51, 58);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  text-shadow:
+		-.3px -.3px 0 #000,
+		.3px -.3px 0 #000,
+		-.3px .3px 0 #000,
+		.3px .3px 0 #000;
   
-
- .thumbnail {
-    background-color: white;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 2px 2px 6px #313135;
-    border-radius: 3px;
-    margin-bottom: 15px;
-    width: 50%;
 }
 
-input {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  display: inline-block;
-  width: 92%;
-  height: 3em;
-  margin-right: 1em;
-  margin-left: 1em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  border-radius: 3px;
-  border-color: darkblue;
-}
-
-label {
-  font-family: Arial, Helvetica, sans-serif;
-  margin-left: 1em;
-}
-
-select {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  margin-bottom: 1em;
+.thumbnail {
+  background-color: hsla(360, 100%, 100%, 0.7);
+  /*box-shadow: 2px 2px 4px #c0c4ff;*/
+  box-shadow: 3px 10px 24px #000;
+  width: 70%;
+  margin-left:15%;
+  padding-left: 10px;
 }
