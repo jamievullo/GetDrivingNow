@@ -14,10 +14,11 @@
  *= require_self
  */
 
- body {
+body {
 
     background: url('CAR-DRIVING.jpeg') no-repeat center center fixed;
     background-size: cover;
+    
     /*background: linear-gradient(to left,#32dfa8,hsl(236, 67%, 56%));*/
   }
 
@@ -25,35 +26,97 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 
-
-.container {
-    display: grid;
-    grid-template-rows: [row1-start] 1fr 1fr [row1-end row2-start] 1fr 1fr [row2-end row3-start] 1fr 1fr 1fr [row3-end row4-start] 1fr 1fr 1fr [row4-end row5-start] 1fr 1fr [row5-end row6-start] 1fr 1fr [row6-end row7-start] 1fr 1fr [row7-end row8-start] 1fr 1fr 1fr [row8-end row9-start] 1fr 1fr [row9-end row10-start] 1fr [row10-end]; 
-        
-
-}
-
-
-
 .words {
-  margin-left: 5px;
-  padding:10px;
-  color: rgb(51, 51, 58);
+  color: rgb(46, 46, 77);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
+  font-size: 20px;
+  text-align: center;
   text-shadow:
-		-.3px -.3px 0 #000,
-		.3px -.3px 0 #000,
-		-.3px .3px 0 #000,
-		.3px .3px 0 #000;
-  
+		-.2px -.2px 0 #000,
+		.2px -.2px 0 #000,
+		-.2px .2px 0 #000,
+		.2px .2px 0 #000; 
 }
 
 .thumbnail {
-  background-color: hsla(360, 100%, 100%, 0.7);
+  margin-top: 150px;
+  background-color: rgba(255, 255, 255);
   /*box-shadow: 2px 2px 4px #c0c4ff;*/
-  box-shadow: 3px 10px 24px #000;
-  width: 70%;
-  margin-left:15%;
-  padding-left: 10px;
+  /*box-shadow: 3px 10px 24px #000;*/
+  width: 103%;
+  margin-left: -7px;
+}
+
+.container {
+  text-align: left;
+  width: 50%;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+.thumbnail2 { 
+  margin-top: 100px;  
+  background-color: rgba(238, 238, 238, 0.7);
+  margin-left: 25%;
+  margin-right: 25%;
+  /*box-shadow: 2px 2px 6px #313135;*/
+  border-radius: 3px;
+  margin-bottom: 15px;
+  width: 50%;
+}
+
+input {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+display: inline-block;
+width: 97%;
+height: 2em;
+margin-right: 2px;
+margin-left: 4px;
+margin-top: 2px;
+margin-bottom: 5px;
+border-radius: 3px;
+border-color: rgba(66, 211, 47, 0.705);
+}
+
+label {
+font-family: Arial, Helvetica, sans-serif;
+color: rgb(38, 38, 77);
+margin-left: 10px;
+height: 3em;
+}
+
+select {
+font-family: Arial, Helvetica, sans-serif;
+height: 2.5em;
+font-size: 13px;
+margin-top: 2px;
+margin-bottom: 2px;
+}
+
+.form-label-group-left {
+width: 49%;
+float: left;
+}
+
+.form-label-group-right {
+width: 49%;
+float: left;
+}
+
+.form-label-group {
+  width: 35%;
+  margin-left: 32.5%;
+  margin-right: 32.5%;
+}
+
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.main-app-class {
+  width:100%;
+  background-color: white;
 }

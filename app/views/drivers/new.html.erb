@@ -1,30 +1,31 @@
-        
-    <h1>Applicant Registration Form</h1>
-        
-<div class="container">   
+    <div class="main-app-class">
+<div class="thumbnail2">
+        <div class="title">
+        <h2>Applicant Registration Form</h2>
+        </div>
         <%= form_for(@driver) do |f| %>
 
-        <div class="1">
+        <div class="form-label-group-left">
             <%= f.text_field :first_name, placeholder: "First Name" %>
         </div>
 
-        <div class="2">
+        <div class="form-label-group-right">
             <%= f.text_field :last_name, placeholder: "Last Name" %>
         </div>
 
-        <div class="3">
+        <div class="form-label-group-left">
             <%= f.text_field :address, placeholder: "Street Address" %>
         </div>
 
-        <div class="4">
+        <div class="form-label-group-right">
             <%= f.text_field :apt, placeholder: "Apt. #" %>
         </div>
 
-        <div class="5">
+        <div class="form-label-group-left">
             <%= f.text_field :city, placeholder: "City" %>
         </div>
 
-        <div class="6">
+        <div class="form-label-group-right">
             <%= f.label :state, "State:" %>
             <%= f.select :state, [["select state"], ["AK"], ["AL"], ["AR"], ["AZ"], ["CA"], ["CO"], 
                 ["CT"], ["DC"], ["DE"], ["FL"], ["GA"], ["HI"], ["IA"], ["ID"], ["IL"], 
@@ -34,16 +35,16 @@
                 ["TN"], ["TX"], ["UT"], ["VA"], ["VT"], ["WA"], ["WI"], ["WV"], ["WY"]] %>
         </div>
 
-        <div class="7">
+        <div class="form-label-group-left">
             <%= f.text_field :zip, placeholder: "Zip Code" %>
         </div>
 
-        <div class="8">
+        <div class="form-label-group-right">
             <%= f.label :residence_type, "Residence Type:" %>
             <%= f.select :residence_type, [["select type"], ['Lives w/ Relatives'], ['Own Home Outright'], ['Rent'], ['Mortgage']] %>
         </div>
 
-        <div class="9">
+        <div class="form-label-group-left">
             <%= f.label :monthly_housing_cost, "Monthly Housing Cost: $" %>
             <%= f.select :monthly_housing_cost, [["-"], ["300"], ["350"], ["400"], ["450"], ["500"], ["550"],
                                 ["600"], ["650"], ["700"], ["750"], ["800"], ["850"], ["900"], ["950"],
@@ -51,58 +52,58 @@
                                 ["1700"], ["1800"], ["1900"], ["2000"]] %>
         </div>
 
-        <div class="10">
+        <div class="form-label-group-right">
             <%= f.label :address_duration_years, "Time at address? "%>
             <%= f.select :address_duration_years, [["years"], ["1"], ["2"], ["3"], ["4"], ["5"], ["6"], ["7"], ["8"], ["9"], ["10"], ["11"], ["12"], ["13"], ["14"],
                                 ["15"], ["16"], ["17"], ["18"], ["19"], ["20"]] %><%= f.select :address_duration_months, [["months"], ["1"], ["2"], ["3"], ["4"], ["5"], ["6"], ["7"], ["8"], ["9"], ["10"], ["11"]] %>
         </div>
 
-        <div class="11">
+        <div class="form-label-group-left">
             <%= f.text_field :phone, placeholder: "Phone Number (no-dashes)" %>
         </div>
 
-        <div class="12">
+        <div class="form-label-group-right">
             <%= f.email_field :email, placeholder: "Email Address" %>
         </div>
 
-        <div class="13">
+        <div class="form-label-group-left">
             <%= f.text_field :dob, placeholder: "Date of Birth / mmddyyyy" %>
         </div>
 
-        <div class="14">
+        <div class="form-label-group-right">
             <%= f.text_field :ssn, placeholder: "Soc. Security Number (no-dashes)" %>
         </div>
 
-        <div class="15">
+        <div class="form-label-group-left">
             <%= f.label :bankruptcy, "Bankruptcy last 5 years?:" %>(check box if yes)
             <%= f.check_box :bankruptcy %> 
         </div>
 
-        <div class="16">
+        <div class="form-label-group-right">
             <%= f.label :employment_type, "Employment Type:" %>
             <%= f.select :employment_type, [["select type"], ['Employed Full-Time'], ['Employed Part-Time'], ['Self-Employed'], ['Social Security'], ['Fixed-Income'], ['Unemployed'], ['Student']] %>
         </div>
 
-        <div class="17">
+        <div class="form-label-group-left">
             <%= f.text_field :employer_name, placeholder: "Employer Name" %>
         </div>
 
-        <div class="18">
+        <div class="form-label-group-right">
             <%= f.text_field :job_title, placeholder: "Job Title" %>
         </div>
 
-        <div class="19">
+        <div class="form-label-group-left">
             <%= f.text_field :employer_phone_number, placeholder: "Employer Phone Number (no-dashes)" %>
         </div>
 
-        <div class="20">
+        <div class="form-label-group-right">
             <%= f.label :job_duration, "Time on Job:"%>
             <%= f.select :job_duration_years, [["years"], ["1"], ["2"], ["3"], ["4"], ["5"], ["6"], ["7"], ["8"], ["9"], ["10"], ["11"], ["12"], ["13"], ["14"],
                                 ["15"], ["16"], ["17"], ["18"], ["19"], ["20"]] %><%= f.select :job_duration_months, [["months"], ["1"], ["2"], 
                                 ["3"], ["4"], ["5"], ["6"], ["7"], ["8"], ["9"], ["10"], ["11"]] %>
         </div>
 
-        <div class="21">
+        <div class="form-label-group-left">
             <%= f.label :monthly_income, "Gross Monthly Income: $" %>
             <%= f.select :monthly_income, [["-"], ["400"], ["450"], ["500"], ["550"],
                                 ["600"], ["650"], ["700"], ["750"], ["800"], ["850"], ["900"], ["950"],
@@ -115,10 +116,11 @@
                                 ["5400"], ["5500"], ["5600"], ["5700"], ["5800"], ["5900"], ["6000"]] %>
         </div>
 
-        <div class="submit">
-            <%= f.submit "Submit Your Application" %>
+        <div class="form-label-group">
+            <%= f.submit "Get Driving Now" %>
         </div>
 
-            <% end %>
-    
+        <% end %>
     </div>
+</div>
+
