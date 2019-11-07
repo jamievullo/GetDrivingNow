@@ -9,10 +9,22 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+
   <body>
+
+  <div class="top-nav">    
+    <p>Logo</p>
+    <p><%= link_to "Get Started", new_driver_path %></p>
+    <p>Car Buying Tools</p>
+    <p>About Us</p>
+  </div>
     <%= link_to "Logout", destroy_user_session_path, method: :delete %>
 
     <%= link_to "Login", new_user_session_path %>
+
+    
+
+
 
     
   

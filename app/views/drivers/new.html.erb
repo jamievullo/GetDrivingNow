@@ -1,7 +1,7 @@
-    <div class="main-app-class">
-<div class="thumbnail2">
+<div class="main-form">
+    <div class="appey">
         <div class="title">
-        <h2>Applicant Registration Form</h2>
+        <h1>Applicant Registration Form</h1>
         </div>
         <%= form_for(@driver) do |f| %>
 
@@ -117,7 +117,7 @@
         </div>
 
         <div class="form-label-group">
-            <%= f.submit "Get Driving Now" %>
+            <%= f.submit "Get Driving Now", class: "btn btn-success btn-lg" %>
         </div>
 
         <% end %>
