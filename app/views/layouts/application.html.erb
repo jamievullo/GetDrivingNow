@@ -18,13 +18,13 @@
     </div>   
     
     <p><%= link_to "Get Started", new_driver_path %></p>
-    <p>Car Buying Tools</p>
-    <p>About Us</p>
+    <p><%= link_to "Car Buying Tools", buying_tools_path %></p>
+    <p><%= link_to "About Us", about_us_path %></p>
   </div>
   <div class="disaster">
     <%= link_to "Logout", destroy_user_session_path, method: :delete %>
     <%= link_to "Login", new_user_session_path %>
-</div>
+  </div>
     
 
 

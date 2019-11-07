@@ -13,6 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+/* navbar */
 .top-nav {
   background-color: white;
   overflow: hidden;
@@ -25,6 +27,7 @@
   position: fixed;
 }
 
+/* body */
 body {
   background: url('LogoGetDrivingNow3.jpg') no-repeat center center fixed;
   background-size: cover;
@@ -38,6 +41,7 @@ h1 {
   color: rgb(0, 151, 0);
 }
 
+/* Application text styling */
 .show-words {
   color: rgb(46, 46, 77);
   font-family: Arial, Helvetica, sans-serif;
@@ -50,6 +54,7 @@ h1 {
 		.2px .2px 0 #000; 
 }
 
+/* Congratulations show page */
 .show-page {
   margin-top: 125px;
   background-image: url('instant-approval.jpg');
@@ -60,6 +65,7 @@ h1 {
   width: 100%;
 }
 
+/* container on show page */
 .container {
   text-align: left;
   width: 50%;
@@ -67,6 +73,7 @@ h1 {
   margin-right: 10%;
 }
 
+/* credit application field styling */
 .appey { 
   margin-top: 125px;  
   background-color: rgba(251, 251, 251, 0.9);
@@ -78,6 +85,7 @@ h1 {
   width: 50%;
 }
 
+/* field box on application */
 input {
 font-family: Arial, Helvetica, sans-serif;
 font-size: 15px;
@@ -92,6 +100,7 @@ border-radius: 3px;
 border-color: rgba(66, 211, 47, 0.705);
 }
 
+/* labels for dropdowns on application */
 label {
 font-family: Arial, Helvetica, sans-serif;
 color: rgb(38, 38, 77);
@@ -99,6 +108,7 @@ margin-left: 10px;
 height: 2.75em;
 }
 
+/* select dropdowns on application */
 select {
 font-family: Arial, Helvetica, sans-serif;
 height: 2em;
@@ -107,16 +117,19 @@ margin-top: 2px;
 margin-bottom: 2px;
 }
 
+/* application fields lined side by side */
 .form-label-group-left {
 width: 49%;
 float: left;
 }
 
+/* application fields lined side by side */
 .form-label-group-right {
 width: 49%;
 float: left;
 }
 
+/* submit button on application */
 .form-label-group {
   width: 35%;
   margin-left: 32.5%;
@@ -124,12 +137,14 @@ float: left;
   /* background-color: green; */
 }
 
+/* title on application */
 .title {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   text-align: center;
 }
 
+/* full container on application page including image */
 .main-form {
   background-image: url('ApplicationImage.png');
   background-repeat: no-repeat;
@@ -137,9 +152,12 @@ float: left;
   background-color: white;
 }
 
+/* navbar logo image  */
 .nav-link-logo {
   border-radius: 4px;
 }
+
+/* navbar logo image animation */
 .nav-link-logo:hover {
   transition: all .3s;
   transform: scaleX(1.1);
