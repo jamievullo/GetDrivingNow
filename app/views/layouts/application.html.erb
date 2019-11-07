@@ -12,16 +12,19 @@
 
   <body>
 
-  <div class="top-nav">    
-    <p>Logo</p>
+  <div class="top-nav"> 
+    <div class="nav-link-logo" >
+      <a href="/"><%= image_tag "LogoGye2.jpeg", height:"50" %></a>
+    </div>   
+    
     <p><%= link_to "Get Started", new_driver_path %></p>
     <p>Car Buying Tools</p>
     <p>About Us</p>
   </div>
+  <div class="disaster">
     <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-
     <%= link_to "Login", new_user_session_path %>
-
+</div>
     
 
 
@@ -29,5 +32,7 @@
     
   
     <%= yield %>
+
+
   </body>
 </html>

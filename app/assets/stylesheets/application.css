@@ -18,7 +18,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   height: 50px;
   width: 100%;
@@ -26,19 +26,17 @@
 }
 
 body {
-    background: url('LogoGetDrivingNow3.jpg') no-repeat center center fixed;
-    background-size: cover;
-    /*background: linear-gradient(to left,#32dfa8,hsl(236, 67%, 56%));*/
-    margin: 0px;
+  background: url('LogoGetDrivingNow3.jpg') no-repeat center center fixed;
+  background-size: cover;
+  /*background: linear-gradient(to left,#32dfa8,hsl(236, 67%, 56%));*/
+  margin: 0px;
   }
 
-  h1 {
-    margin-bottom: 2px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(0, 151, 0);
-  }
-
-
+h1 {
+  margin-bottom: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 151, 0);
+}
 
 .show-words {
   color: rgb(46, 46, 77);
@@ -138,4 +136,13 @@ float: left;
   background-size: 50% 100%;
   background-color: white;
 }
+
+.nav-link-logo {
+  border-radius: 4px;
+}
+.nav-link-logo:hover {
+  transition: all .3s;
+  transform: scaleX(1.1);
+}
+
 
