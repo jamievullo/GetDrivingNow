@@ -27,9 +27,20 @@
   position: fixed;
 }
 
+/* navbar logo image  */
+.nav-link-logo {
+  border-radius: 4px;
+}
+
+/* navbar logo image animation */
+.nav-link-logo:hover {
+  transition: all .3s;
+  transform: scaleX(1.1);
+}
+
 /* body */
 body {
-  background: url('LogoGetDrivingNow3.jpg') no-repeat center center fixed;
+  background: url('GetDriving7.jpg') no-repeat center center fixed;
   background-size: cover;
   /*background: linear-gradient(to left,#32dfa8,hsl(236, 67%, 56%));*/
   margin: 0px;
@@ -152,15 +163,6 @@ float: left;
   background-color: white;
 }
 
-/* navbar logo image  */
-.nav-link-logo {
-  border-radius: 4px;
-}
 
-/* navbar logo image animation */
-.nav-link-logo:hover {
-  transition: all .3s;
-  transform: scaleX(1.1);
-}
 
 
